@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include header.html %}
+
+    <section id="intro">
+        <div class="container">
+            <div>left col</div>
+            <div>right col</div>
+        </div>
+    </section>
+
+    <section id="colours">
+        <div class="container">
+            <div>left col<br>
+                {{ content }}
+            </div>
+            <div>right col</div>
+        </div>
+    </section>
+
+    <section id="typography">
+        <div class="container">
+            <div>left col</div>
+            <div>right col</div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>

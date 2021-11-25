@@ -1,0 +1,5 @@
+{% assign heading = include.heading %}
+
+<h{{ include.level }} id="{{ heading | slugify }}" class="linked-heading">
+        {{ heading }}
+    </h{{ include.level }}>

@@ -1,0 +1,22 @@
+---
+---
+//content
+$emptyvar: transparent;
+$primary: #270D5B;
+$secondary: #DED4EB;
+$accent: #7344D2;
+$light: #F9F7F1;
+$darker: #E5E4DE;
+$offblack: #131313;
+$white: #ffffff;
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+

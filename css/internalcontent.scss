@@ -1,0 +1,27 @@
+---
+---
+//content
+$emptvar: transparent;
+$primary: #270D5B;
+
+h1, h2, h3, h4, h5, h6, p, figure {
+    color: $primary;
+    /* 64px navbar + 20px for spacing */
+    scroll-margin-top: 88px;
+}
+
+figure {
+    margin: 0; 
+    & img {
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 28px 24px -24px rgba(0,0,0,0.24);
+    margin-bottom: 16px;
+    }
+    & figcaption {
+        text-align: center;
+        & span {
+            font-weight: 500;
+        }
+    }
+}

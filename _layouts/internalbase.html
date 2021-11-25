@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <!-- internalbase.html styled by internalbase.css -->
+</head>
+<body>
+    {% include header.html %}
+
+    <section id="intro">
+        <div class="container">
+            <!--<div class="breadcrumb"><span class="breadcumb__top-level">Breadcumb</span><span class="breadcrumb__divider">/</span>Goes<span class="breadcrumb__divider">/</span><span class="breadcrumb__currentpage">Here</span></div>-->
+            {{page.breadcrumb}}
+            <div class="page-intro">
+                <h1>{{page.title}}</h1>
+                <p>{{page.introblurb}}</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="typography">
+        <div class="container main-content">
+            <div class="left-col">
+                {{ content }}
+            </div>
+            <div class="right-col">
+                <div class="side-nav">
+                    <ul>
+                        <!--
+                        <li><a href="#">Text colour</a></li>
+                        <li><a href="#">Headings</a></li>                     
+                        <li><a href="#">Rich Text</a></li>
+                        -->
+                        {{page.sidenav}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>
